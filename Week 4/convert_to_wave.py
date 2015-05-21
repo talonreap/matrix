@@ -9,33 +9,33 @@ import stereosound as myfile
 #you have written.
 
 #Converts the sound in love.wav file to a Sound object.
-love = sound.Sound(filename='love.wav')
+#love = sound.Sound(filename='love.wav')
 
 
 #The function rem_vocals written in the stereosound module is called
 #and the Sound object it returns is assigned to remvocals.
-remvocals = myfile.rem_vocals(love)
+#remvocals = myfile.rem_vocals(love)
 
 #The Sound object remvocals is converted to sound in
 #a wav file called lovenovocals.wav.
 #This wav file did not exist before but is newly created.
-remvocals.save_as('lovenovocals.wav')
+#remvocals.save_as('lovenovocals.wav')
 
 
 #Prompts the user to chose a fade length they want
-#fade_length = raw_input("Please enter fade length: ")
+fade_length = raw_input("Please enter fade length: ")
 #Converts the sound in water.wav file to a Sound object.
-#wave = sound.Sound(filename='water.wav')
+wave = sound.Sound(filename='water.wav')
 
 
 #The function fade_in written in the stereosound module is called
 #and the Sound object it returns is assigned to fadein.
-#fadein = myfile.fade_in(wave,fade_length)
+fadein = myfile.fade_in(wave,fade_length)
 
 #The Sound object fadein is converted to sound in
 #a wav file called fadeinwave.wav.
 #This wav file did not exist before but is newly created.
-#fadein.save_as('fadeinwave.wav')
+fadein.save_as('fadeinwave.wav')
 
 
 #Converts the sound in rain.wav file to a Sound object.
