@@ -59,6 +59,7 @@ def fade_in(snd, fade_length):
 ##
 ##
 ##def fade(snd, fade_length):
-##    fade_in(snd, fade_length)
-##    fade_out(snd_copy, fade_length)
-##    return snd_copyy
+##    snd_copy = snd_copy()
+##    snd_copy = fadein(snd_copy, fade_length)
+##    snd_copy = fade_out(snd_copy, fade_length)
+##    return snd_copy
